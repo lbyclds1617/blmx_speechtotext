@@ -6,18 +6,19 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Watson - Speech To Text</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-
-	
-	<legend>Convert Speech to Text</legend>
-	
+	<legend class="header">Convert Speech to Text</legend>
+	 
 	<form method="POST" action="home" enctype="multipart/form-data">
 		<input type="file" name="file" accept=".wav">
 		<input type="submit" name="submit" value="Convert">
 	</form>
 	
-	<p><c:if test="${!empty transcription}">${transcription}</c:if></p>
-
+	<c:if test="${!empty transcription}">
+		<h3>Transcript: </h3>
+		<p class="result">${transcription}</p>
+	</c:if>
 </body>
 </html>

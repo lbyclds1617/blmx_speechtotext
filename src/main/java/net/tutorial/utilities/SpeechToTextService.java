@@ -16,7 +16,7 @@ public class SpeechToTextService {
 		
 		public SpeechToTextService() {
 			EnvVariables envVar = new EnvVariables();
-			Map<String, String> creds = envVar.getCredentials("language_translator");
+			Map<String, String> creds = envVar.getCredentials("speech_to_text");
 			service = new SpeechToText(creds.get("username"), creds.get("password") );
 		} 
 		

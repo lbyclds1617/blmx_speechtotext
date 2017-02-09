@@ -44,8 +44,8 @@ public class EnvVariables {
 			creds.put("username", serviceCreds.get("username").toString());
 			creds.put("password",  serviceCreds.get("password").toString());
 		} else {
-			creds.put("username", "f0effd5f-dfe8-4b3d-8572-a17c4eb1bd86"); // Put username here if you are testing in local
-			creds.put("password",  "XzZZUoUEJMQ8"); // Put password here if you are testing in local
+			creds.put("username", ""); // Put username here if you are testing in local
+			creds.put("password",  ""); // Put password here if you are testing in local
 		}
 		
 		return creds;
